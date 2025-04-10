@@ -3,6 +3,6 @@
     "sass": "^1.86.3"
   },
   "scripts": {
-    "watch-sass": "sass --watch public/sass/style.scss:public/css/style.css"
+    "watch-sass": "sass --watch public/sass/style.scss:public/css/style.css --style=compressed"
   }
 }
