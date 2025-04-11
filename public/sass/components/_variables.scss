@@ -1,14 +1,14 @@
 // Colors
 // Lightmode
-$lightmode-bg: #ffffff;
-$lightmode-text: #1e3a8a;
-$lightmode-secondary-text: #4299e1;
-$lightmode-accent: #63b3ed;
-$lightmode-border: #e0e0e0;
+$lightmode-bg: hsl(0, 0%, 100%);
+$lightmode-text: hsl(224, 64%, 33%);
+$lightmode-secondary-text: hsl(207, 73%, 57%);
+$lightmode-accent: hsl(205, 79%, 66%);
+$lightmode-border: hsl(0, 0%, 88%);
 
 // Darkmode
-$darkmode-bg: #1a202c;
-$darkmode-text: #cbd5e0;
-$darkmode-secondary-text: #81a1c1;
-$darkmode-accent: #63b3ed;
-$darkmode-border: #333333;
+$darkmode-bg: hsl(220, 26%, 14%);
+$darkmode-text: hsl(211, 25%, 84%);
+$darkmode-secondary-text: hsl(210, 34%, 63%);
+$darkmode-accent: hsl(205, 79%, 66%);
+$darkmode-border: hsl(0, 0%, 20%);

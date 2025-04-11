@@ -1,0 +1,48 @@
+@mixin flex($align: center, $justify: center, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin font($size, $weight, $style, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+}
+
+@mixin button-style($bg, $hover-bg, $color, $hover-color, $border, $hover-border, $transition) {
+  background-color: $bg;
+  color: $color;
+  border: $border;
+  &:hover {
+    color: $hover-color;
+    border: $hover-border;
+    background-color: $hover-bg;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}

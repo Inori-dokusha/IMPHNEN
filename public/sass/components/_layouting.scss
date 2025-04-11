@@ -1,0 +1,50 @@
+@use "variables" as c;
+@use "mixins" as m;
+@use "function" as f;
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-size: f.rem(16);
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  & a {
+    text-decoration: none;
+  }
+  & button {
+    cursor: pointer;
+    background: none;
+  }
+}
+
+// Navbar
+.navbar,
+.logo {
+  @include m.flex(center, space-around);
+}
+
+.navbar {
+  @include m.padding(10px, 20px, 10px, 20px);
+  border: 1px solid;
+
+  .logo {
+    border: 1px solid black;
+    overflow: hidden;
+    width: fit-content;
+    height: 80px;
+  }
+
+  .menu {
+    border: 1px solid;
+    .menu-links {
+      border: 1px solid;
+      @include m.flex(center, space-evenly);
+      gap: 2rem;
+      a {
+        @include m.font(f.rem(18), 400, normal, c.$lightmode-text);
+      }
+    }
+  }
+}

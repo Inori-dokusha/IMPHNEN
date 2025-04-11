@@ -1,0 +1,24 @@
+// Convert px ke rem
+@function rem($px, $base: 16) {
+  @return ($px / $base) * 1rem;
+}
+
+// Buat warna transparan
+@function alpha($color, $opacity: 0.5) {
+  @return rgba($color, $opacity);
+}
+
+// Auto darken warna
+@function hover-dark($color, $amount: 10%) {
+  @return darken($color, $amount);
+}
+
+// Auto lighten warna
+@function hover-light($color, $amount: 10%) {
+  @return lighten($color, $amount);
+}
+
+// Hitung rasio (misal aspect ratio)
+@function ratio($width, $height) {
+  @return ($height / $width) * 100%;
+}
