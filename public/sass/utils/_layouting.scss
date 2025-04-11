@@ -1,0 +1,20 @@
+@use "variables" as c;
+@use "mixins" as m;
+@use "function" as f;
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-size: f.rem(16);
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  & a {
+    text-decoration: none;
+  }
+  & button {
+    cursor: pointer;
+    background: none;
+  }
+}
