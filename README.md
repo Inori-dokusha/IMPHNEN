@@ -1,2 +1,2 @@
 # IMPHNEN
-Lading page website IMPHNEN
+Landing page website IMPHNEN
