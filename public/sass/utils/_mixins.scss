@@ -5,10 +5,6 @@
   flex-direction: $direction;
 }
 
-@mixin padding($top, $right, $bottom, $left) {
-  padding: $top $right $bottom $left;
-}
-
 @mixin font($size, $weight, $style, $color) {
   font-size: $size;
   font-weight: $weight;
